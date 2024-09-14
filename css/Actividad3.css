@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+:root{
+    --color-primario:blue;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #fbff00;
+    text-align: center;
+    /*padding: 10px, 0;*/
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+#menu{
+list-style:none;
+margin: 0;
+padding: 0;
+}
+
+.opcion{
+display:inline;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #8a2be2;
+}
+
+#superior{
+background-image: url(../imagenes/uat.jpg);
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+.Sobrepuesto{
+color: white;
+position: absolute;
+top: 50%;
+right: 40%;
+top: 40%;
+background-color: rgba(0, 0, 0, 0.5);
+text-align: center;
+}
