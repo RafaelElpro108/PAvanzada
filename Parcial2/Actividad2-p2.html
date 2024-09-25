@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para consultar la CURP</title>
+    <style>
+
+        form{
+font-family: "Lato", sans-serif;
+display:inline;
+flex-direction: column;
+gap: 5px;
+        }
+        input, select{
+            height: 24px;
+            width: 50vw;
+            align-items: center;
+
+
+        }
+
+        body{
+    text-align: center;
+    align-items: center;
+
+        }
+
+        .enviar{
+         height: 50px;
+         width: 60px;
+         align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Nombre</h1>
+        <input type="text"/>
+        <h1>Apellido Paterno</h1>
+        <input type="text"/>
+        <h1>Apellido Materno</h1>
+        <input type="text"/>
+
+        <h1>Estado</h1>
+        <select required>
+        <option value=""- Selecciona una opción válida -></option>
+                              <option value="BS">Baja California Sur</option>
+                              <option value="CC">Campeche</option>
+                              <option value="CL">Coahuila</option>
+                              <option value="CM">Colima</option>
+                              <option value="CS">Chiapas</option>
+                              <option value="CH">Chihuahua</option>
+                              <option value="DF">Ciudad de México</option>
+                              <option value="DG">Durango</option>
+                              <option value="GT">Guanajuato</option>
+                              <option value="GR">Guerrero</option>
+                              <option value="HG">Hidalgo</option>
+                              <option value="JC">Jalisco</option>
+                              <option value="MC">Estado de México</option>
+                              <option value="MN">Michoacán</option>
+                              <option value="MS">Morelos</option>
+                              <option value="NT">Nayarit</option>
+                              <option value="NL">Nuevo León</option>
+                              <option value="OC">Oaxaca</option>
+                              <option value="PL">Puebla</option>
+                              <option value="QT">Querétaro</option>
+                              <option value="QR">Quintana Roo</option>
+                              <option value="SP">San Luis Potosí</option>
+                              <option value="SL">Sinaloa</option>
+                              <option value="SR">Sonora</option>
+                              <option value="TC">Tabasco</option>
+                              <option value="TS">Tamaulipas</option>
+                              <option value="TL">Tlaxcala</option>
+                              <option value="VZ">Veracruz</option>
+                              <option value="YN">Yucatán</option>
+                              <option value="ZS">Zacatecas</option>
+                              <option value="NE">Nacido en el extranjero</option>
+                          </select>
+
+        <h1>Fecha de Nacimiento</h1>
+        <input type="date"/>
+
+        <h1>Sexo</h1>
+        <select required>
+            <option value=""- Selecciona una opción válida -></option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            </select>
+<br>
+        <input class="enviar" type="submit"/>
+
+
+
+    </form>
+</body>
+</html>

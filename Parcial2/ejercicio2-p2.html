@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de imput</title>
+    <style>
+        body, form{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            font-size: 2rem;
+            gap: 10px;
+        }
+        input{
+            font-family: "Lato", sans-serif;
+            height: 24px;
+            width: 50vw;
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 0, 0);
+            margin: 30px;
+        }
+
+        label{
+            font-family: "Lato", sans-serif;
+        }
+
+
+        input:focus{
+            background-color: gray;
+            color: white;
+
+        }
+
+        #btnEnviar{
+         padding:20px;
+         font-size: 1.2rem;
+         width: 10vw;
+
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label>Entrada de tipo texto</label>
+    <input type="text" />
+    <label>Entrada de tipo numerico</label>
+    <input type="number"/>
+    <label>Entrada de tipo email</label>
+    <input type="email"/>
+    <label>Entrada de tipo fecha</label>
+    <input type="date">
+    <label>Entrada de tipo hora</label>
+    <input type="time">
+    <label>Entrada de tipo archivo</label>
+    <input type="file">
+    <label>Entrada de tipo contraseña</label>
+    <input type="password">
+    <select required>
+        <option value=""- Selecciona una opción válida -></option>
+        <option value="México">México</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="Canadá">Canadá</option>
+
+    </select>
+
+    <input id="btnEnviar" type="submit"/>
+    </form>
+
+    
+</body>
+</html>
