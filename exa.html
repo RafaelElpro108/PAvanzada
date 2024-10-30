@@ -6,17 +6,55 @@
     <title>Peliculas</title>
 </head>
 <style>
+.imagen{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  
+}
+
 img{
-display: grid;
-grid-template-columns: 4, 1fr;
-border-color: black;
+    width: 250px;
+    height: 400px;
+    margin-left: 7px;
+    text-align: center;
+    border-color: rgb(133, 32, 227);
+    border-radius: 20px;
+}
+
+body{
+    background-color: rgb(143, 75, 207);
+}
+
+div{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.descripción{
+font-size: 10px;
+text-align: justify;
+}
+
+
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-size: 35px;
+    text-align: center;
 }
 </style>
 
 <body>
-    <div id="DevolverPeliculas"></div>
-    <div id="MostrarResultados"></div>
+    <h1>REPOSITORIO DE PELICULAS</h1>
+    
+    <div class="contraste">
+    <div id="contenedor" class="imagen"></div>
+    </div>
+    <div class="descripción"></div>
     <script src="exa.js"></script>
-
 </body>
+
 </html>

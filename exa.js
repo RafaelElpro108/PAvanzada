@@ -19,7 +19,9 @@ function MostrarResultados(peliculas)
         let pelicula=peliculas[i];
         let div= document.createElement('div');
         div.innerHTML=`<img src='${rutaImagen +pelicula.poster_path }'/>
-        <div>Titulo: ${pelicula.title}</div>`;
+        <div>Titulo: ${pelicula.title}</div>
+        <div>Calificación: ${pelicula.vote_average}</div>
+         <div>Sinopsis: ${pelicula.overview}</div>`
         contenedor.appendChild(div);
     }
 }
